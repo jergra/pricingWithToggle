@@ -11,7 +11,7 @@ body{
     #content{
         display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(10px, auto);
         min-width: 375px;
         grid-gap: 40px;
         grid-template-areas:
@@ -33,6 +33,10 @@ body{
     }
     #design2 {
         grid-area: design2;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        margin-top: -800px;
         z-index: -1;
     }    
     #top1 {
@@ -40,7 +44,7 @@ body{
         width: 350px;
         height: 180px;
         justify-self: center;
-        margin-top: -100px;
+        margin-top: -20px;
     }    
     #basic {
         grid-area: basic;
@@ -51,6 +55,7 @@ body{
         justify-self: center;
         background-color: white;
         border-radius: 7px;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);  
     }
     #professional {
         grid-area: professional;
@@ -61,22 +66,28 @@ body{
         background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
         border-radius: 7px;
         color: white;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);  
     }    
     #master {
         grid-area: master;
         width: 360px;
         height: 480px;
         padding-top: 10px;
+        margin-bottom: 30px;
         justify-self: center;
         background-color: white;
         border-radius: 7px;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);  
+    }
+    .buttons {
+        margin-top: 43px;
     }
 }
 /* desktop grid */
 @media screen and (min-width: 775px){
     #content{
         display: grid;
-        grid-template-columns: 535px 370px 535px;
+        grid-template-columns: 550px 340px 550px;
         grid-auto-rows: minmax(10px, auto);
         max-width: 1440px;
         grid-template-areas:
@@ -90,54 +101,58 @@ body{
         grid-area: design1;
         width: 200px;
         height: 200px;
-        margin-left: 160px;
+        margin-left: 175px;
     }    
     #design2 {
         grid-area: design2;
         width: 200px;
-        height: 200px;
-        margin-top: 600px;
+        height: 290px;
+        margin-top: 570px;
     }    
     #top1 {
         grid-area: top1;
         width: 440px;
         height: 180px;
         justify-self: center;
-        margin-top: -760px;
+        margin-top: -820px;
         margin-bottom: 20px;
     }
     #basic {
         grid-area: basic;
-        width: 370px;
-        height: 480px;
-        margin-top: -550px;
+        width: 340px;
+        height: 450px;
+        margin-top: -600px;
         padding-top: 10px;
         justify-self: right;
         background-color: white;
         border-radius: 7px;
-        z-index: 1;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);  
     }
     #professional {
         grid-area: professional;
-        width: 370px;
-        height: 500px;
-        margin-top: -570px;
+        width: 340px;
+        height: 475px;
+        margin-top: -625px;
         padding-top: 35px;
         justify-self: center;
         background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
         border-radius: 7px;
         color: white;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);  
     }    
     #master {
         grid-area: master;
-        width: 370px;
-        height: 480px;
-        margin-top: -550px;
+        width: 340px;
+        height: 450px;
+        margin-top: -600px;
         padding-top: 10px;
         justify-self: left;
         background-color: white;
         border-radius: 7px;
-        z-index: 1;
+        box-shadow: 3px 6px 30px hsl(240, 78%, 94%);
+    }
+    .buttons {
+        margin-top: 32px;
     }
 }
 .priceB {
@@ -166,7 +181,7 @@ body{
     margin-bottom: 40px;
 }
 h2 {
-    margin-bottom: 45px; 
+    margin-bottom: 40px; 
     color: hsl(233, 23%, 49%);
     font-size: 30px;
 }
@@ -240,9 +255,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#buttons {
-    margin-top: 40px;
-}
 .btnStyle1 {
     background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
@@ -280,9 +292,9 @@ input:checked + .slider:before {
     border: 1px solid white;
     border-radius: 5px;
 }
+
 .attribution { 
     grid-area: attribution;
-    margin-top: 60px;
     margin-bottom: 20px;
     font-size: 11px; 
     text-align: center; 
